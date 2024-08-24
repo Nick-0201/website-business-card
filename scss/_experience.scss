@@ -1,0 +1,50 @@
+.expirence {
+  // background: url(../image/expirience.png) center/cover no-repeat;
+
+
+  &__logo {
+    text-align: center;
+    padding-top: 178.25px;
+  }
+
+  &__title {
+    padding-top: 34px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 53px;
+    text-align: center;
+    color: #FFFFFF;
+  }
+
+  &__subtitle {
+    padding-top: 33px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__img {
+    padding: 113px 0 90px 0;
+    text-align: center;
+
+  }
+
+}
+
+@media(max-width:425px) {
+  .expirence {
+    &__logo {
+      padding-top: 100px;
+    }
+
+    &__title {
+      font-size: 44px;
+    }
+  }
+}

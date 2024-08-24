@@ -1,0 +1,170 @@
+.past {
+  background: #FAF8F0;
+  padding: 100px 0 70px 0;
+
+  &__rectangle {
+    text-align: center;
+  }
+
+  &__title {
+    padding-top: 30px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    color: #52503B;
+  }
+
+  &__subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 12px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #52503B;
+  }
+
+  &__row {
+    padding-top: 31px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    max-width: 584px;
+    padding: 31px;
+    background: #FFFFFF;
+
+    &-stars {
+      padding-bottom: 9.63px;
+    }
+
+    &-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: #333333;
+    }
+
+    &-text {
+      padding-top: 11px;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+    }
+
+    &-nickname {
+      padding-top: 19px;
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+
+  &__btn {
+    padding-top: 19.63px;
+    display: flex;
+    column-gap: 10px;
+    justify-content: end;
+
+    &-left {
+      border: 2px solid #52503B;
+      height: 60px;
+      width: 60px;
+      background: transparent;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &-rigth {
+      border: 2px solid #52503B;
+      height: 60px;
+      width: 60px;
+      background: transparent;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    &-left:hover {
+      background: #52503B;
+    }
+
+    &-rigth:hover {
+      background: #52503B;
+    }
+
+    &-left:active {
+      background: #E08631;
+      border: 2px solid #E08631;
+    }
+
+    &-rigth:active {
+      background: #E08631;
+      border: 2px solid #E08631;
+    }
+  }
+}
+
+@media(max-width:1200px) {
+  .past {
+    &__row {
+      display: flex;
+      column-gap: 20px;
+    }
+  }
+}
+
+@media(max-width:992px) {
+  .past {
+    &__row {
+      display: flex;
+      column-gap: 20px;
+    }
+
+    &__card {}
+
+    &__btn {
+      justify-content: center;
+    }
+  }
+}
+
+@media(max-width:767px) {
+  .past {
+    &__row {
+      display: block;
+    }
+
+    &__card {
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      justify-content: center;
+    }
+  }
+
+}
+
+@media(max-width:425px) {
+  .past {
+    &__row {
+      display: block;
+    }
+
+    &__card:first-child {
+      margin-bottom: 20px;
+    }
+
+    &__btn {
+      justify-content: center;
+    }
+  }
+}

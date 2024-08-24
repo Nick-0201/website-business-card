@@ -1,0 +1,163 @@
+.booked {
+  padding: 100px 0;
+  background: #FAF8F0;
+
+  &__rectangle {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  &__title {
+    max-width: 533px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    color: #52503B;
+    text-align: center;
+    padding-bottom: 12px;
+  }
+
+  &__subtitle {
+    max-width: 600px;
+    margin: 0 auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #52503B;
+    padding-bottom: 20px;
+  }
+
+  &__btn {
+    max-width: 269px;
+    margin: 0 auto;
+    display: flex;
+
+    &-first {
+      button {
+        font: inherit;
+        padding: 0 21px;
+        height: 52px;
+        background: transparent;
+        border: 4px solid #52503B;
+        border-radius: 6px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #52503B;
+        cursor: pointer;
+        margin-right: 20px;
+      }
+    }
+
+    &-secend {
+      button {
+        font: inherit;
+        padding: 0 21px;
+        height: 52px;
+        background: transparent;
+        border: 4px solid #52503B;
+        border-radius: 6px;
+        text-align: center;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #52503B;
+        cursor: pointer;
+      }
+    }
+
+    &-first:hover {
+      button {
+        background: #52503B;
+        color: white;
+      }
+
+    }
+
+    &-secend:hover {
+      button {
+        background: #52503B;
+        color: white;
+      }
+    }
+
+    &-first:active {
+      button {
+        background: #E08631;
+        color: white;
+        border: 4px solid #E08631;
+      }
+
+    }
+
+    &-secend:active {
+      button {
+        background: #E08631;
+        color: white;
+        border: 4px solid #E08631;
+      }
+    }
+  }
+}
+
+@media(max-width:992px) {
+  .booked {
+    padding: 60px 0px;
+
+    &__title {
+      font-size: 32px;
+    }
+
+    &__btn {
+      display: flex;
+
+      &-first {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media(max-width:767px) {
+  .booked {
+    &__title {
+      font-size: 24px;
+    }
+
+    &__btn {
+      display: block;
+
+      &-first {
+        button {
+          margin-right: 0;
+        }
+
+        margin-bottom: 15px;
+        display: flex;
+        justify-content: center;
+      }
+
+      &-secend {
+        button {
+          margin-right: 0;
+        }
+
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media(max-width:425px) {
+  .booked {
+    padding: 30px 0;
+  }
+}

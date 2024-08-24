@@ -1,0 +1,63 @@
+.slider {}
+
+.f-carousel {
+  &__nav {
+    display: none;
+  }
+
+  &__dots {
+    display: none !important;
+  }
+}
+
+.slide {
+  &__img {
+    width: 100%;
+    height: 736px;
+    object-fit: cover;
+  }
+}
+
+.f-progress {
+  display: none;
+}
+
+.parent {
+  position: relative;
+
+}
+
+.child {
+  width: 100%;
+  height: 100%;
+
+  &_first {
+    position: absolute;
+    z-index: 2;
+
+  }
+
+  &_second {
+    position: absolute;
+    z-index: 1;
+
+  }
+
+
+}
+
+.bg_b {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+}
+
+.content {
+  box-sizing: border-box;
+  max-width: 80%;
+  padding: 0 40px;
+  /* Задаем ширину содержимого */
+  margin: 0 auto;
+  /* Центрируем по горизонтали */
+  text-align: center;
+  /* Центрируем текст */
+}

@@ -1,0 +1,25 @@
+.gallary-second {
+  height: 600px;
+  background: url(../image/gallary/gallary2.png) center/cover no-repeat;
+}
+
+@media (max-width:992px) {
+  .gallary-second {
+    height: 500px;
+    background: url(../image/gallary/gallary2.png) center/cover no-repeat;
+  }
+}
+
+@media (max-width:767px) {
+  .gallary-second {
+    height: 400px;
+    background: url(../image/gallary/gallary2.png) center/cover no-repeat;
+  }
+}
+
+@media (max-width:425px) {
+  .gallary-second {
+    height: 200px;
+    background: url(../image/gallary/gallary2.png) center/cover no-repeat;
+  }
+}

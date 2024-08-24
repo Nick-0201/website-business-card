@@ -1,0 +1,87 @@
+.arrangements {
+  background: #FAF8F0;
+  padding: 100px 0;
+
+  &__cube {
+    text-align: center;
+  }
+
+  &__title {
+    padding-top: 38px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    text-align: center;
+    color: #52503B;
+  }
+
+  &__subtitle {
+    padding: 14px 0 30px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #52503B;
+  }
+
+  &__row {
+    display: flex;
+    column-gap: 64px;
+  }
+
+  &__column {
+    width: 33.3333%;
+
+  }
+
+  &__card {
+    text-align: center;
+
+    &-icon {
+      padding-bottom: 12px;
+    }
+
+    &-title {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      color: #52503B;
+    }
+
+    &-subtitle {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      text-align: center;
+      color: #52503B;
+    }
+  }
+}
+
+
+@media (max-width:767px) {
+  .arrangements {
+    padding: 40px 0;
+  }
+}
+
+@media(max-width:425px) {
+  .arrangements {
+    &__row {
+      display: block;
+    }
+
+    &__column {
+      width: 100%;
+    }
+
+    &__card {
+      padding-bottom: 30px;
+    }
+  }
+}

@@ -1,0 +1,51 @@
+.guest {
+  padding: 100px 0 140px 0;
+
+  &__cube {
+    text-align: center;
+    padding-bottom: 32px;
+  }
+
+  &__title {
+    text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 96px;
+    text-align: center;
+    color: #52503B;
+  }
+}
+
+@media(max-width:992px) {
+  .guest {
+    padding: 50px 0 70px 0;
+
+    &__cube {
+      text-align: center;
+      padding-bottom: 16px;
+    }
+
+    &__title {
+      font-size: 54px;
+      line-height: 70px;
+    }
+  }
+}
+
+@media(max-width:767px) {
+  .guest {
+    &__title {
+      font-size: 32px;
+      line-height: 50px;
+    }
+  }
+}
+
+@media(max-width:425px) {
+  .guest {
+    &__title {
+      font-size: 32px;
+    }
+  }
+}

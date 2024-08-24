@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1240px;
+  padding: 0 20px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@import "./header";
+@import "./experience";
+@import "./book";
+@import "./guest";
+@import "./gallary-first";
+@import "./arrangements";
+@import "./perfect";
+@import "./past";
+@import "./gallary-second";
+@import "./together";
+@import "./booked";
+@import "./footer";
+@import "./humburger";
+@import "./sliderset";

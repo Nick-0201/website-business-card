@@ -1,0 +1,126 @@
+.perfect {
+  padding: 100px 0;
+
+  &__title {
+    padding-top: 30px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 36px;
+    color: #52503B;
+  }
+
+  &__subtitle {
+    max-width: 554px;
+    padding: 14px 0 32px 0;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #52503B;
+  }
+
+  &__rows {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__row {
+    &-left {
+      width: 50%;
+    }
+
+    &-rigth {
+      width: 50%;
+    }
+  }
+
+  &__card {
+    display: flex;
+    margin-bottom: 32px;
+
+    &_h50 {
+      height: 50px;
+    }
+
+    &_h70 {
+      height: 70px;
+    }
+
+    & &-img {
+      margin-right: 16px;
+    }
+
+    &-text {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 20px;
+      color: #333333;
+    }
+  }
+}
+
+@media(max-width:992px) {
+  .perfect {
+    &__card {}
+  }
+}
+
+@media(max-width:767px) {
+  .perfect {
+    &__rectangle {
+      text-align: center;
+    }
+
+    &__title {
+      text-align: center;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+
+    &__rows {
+      display: block;
+    }
+
+    &__row-left {
+      width: 100%;
+    }
+
+    &__row-rigth {
+      width: 100%;
+    }
+
+    &__card {
+      display: block;
+      height: 100%;
+      text-align: center;
+    }
+  }
+}
+
+@media(max-width:425px) {
+  .perfect {
+    padding: 30px 0;
+
+    &__rows {
+      display: block;
+    }
+
+    &__row-left {
+      width: 100%;
+    }
+
+    &__row-rigth {
+      width: 100%;
+    }
+
+    &__card {
+      display: block;
+      height: 100%;
+      text-align: center;
+    }
+  }
+}
